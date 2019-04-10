@@ -1,0 +1,51 @@
+tcp.stream eq 14
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Super Secret</title>
+
+</head>
+
+<body>
+        <form action="verify.php" method="post">
+                Username: <input type="text" name="usr"><br>
+                Password: <input type="password" name="pwd"><br>
+                <input type="submit">
+        </form>
+
+</body>
+
+</html>
+POST /verify.php HTTP/1.1
+Host: 192.168.56.101
+Connection: keep-alive
+Content-Length: 42
+Cache-Control: max-age=0
+Origin: http://192.168.56.101
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://192.168.56.101/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+usr=omkar&pwd=tjctf%7Bb0mk4r_br0k3_b10n%7DHTTP/1.1 200 OK
+Date: Thu, 21 Mar 2019 02:11:47 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Content-Length: 51
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+
+<html>
+<body>
+
+Welcome omkar <br>
+
+</body>
+</html>
+
+flag:tjctf{b0mk4r_br0k3_b10n}
