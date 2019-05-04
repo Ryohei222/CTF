@@ -32,6 +32,9 @@ def sign(m, key):
 	s2 = pow(m, dq, q)
 	h = (qInv*(s1-s2))%p
 	s = s2+h*q
+	s1 = m ^ d mod p
+	s2` = m ^ d mod q`
+	m` = CRT
 	return [s, e, p*q, p, q]
 	
 	
