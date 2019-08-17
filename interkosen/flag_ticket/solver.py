@@ -9,10 +9,6 @@ def post_result(result):
     return r.text
 
 def make_result(iv, cipher):
-    """
-    iv: binary (16 byte)
-    cipher: binary (16n byte)
-    """
     assert len(iv) == 16, "Error: invaild iv length"
     assert len(cipher) % 16 == 0, "Error: invaild ciphertext length"
     return hexlify(iv+cipher)
