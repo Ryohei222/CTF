@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flag Ticket</title>
+    <link rel="stylesheet" href="{{ api.static_url('style.css') }}">
+  </head>
+  <body>
+    <div id="app">
+      <h1>Your ticket:</h1>
+      <div>
+        <div style="display: inline-block; width: 100px;">Number: </div>
+        <div style="display: inline-block;">{{ data.number }}</div>
+      </div>
+      <div>
+        <div style="display: inline-block; width: 100px;">Flag: </div>
+        {% if data.is_hit %}
+        <div style="display: inline-block; width: 100px;">{{ flag }}</div>
+        {% else %}
+        <div style="display: inline-block;">Not available. I'm sorry.</div>
+        {% endif %}
+      </div>
+
+      <p><a href="/exit">exit</a></p>
+    </div>
+  </body>
+</html>

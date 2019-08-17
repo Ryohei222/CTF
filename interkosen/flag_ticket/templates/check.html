@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flag Ticket</title>
+    <link rel="stylesheet" href="{{ api.static_url('style.css') }}">
+  </head>
+  <body>
+    <div id="app">
+      <h1>Check your ticket number</h1>
+      <form action="/check" method="post">
+        <div>
+          <input type="text" name="number" autofocus autocomplete="off" required>
+        </div>
+        <div>
+          <input type="submit" value="Check">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
